@@ -1,11 +1,11 @@
-Name: divdotnet
-Cartridge-Short-Name: DIVDOTNET
+Name: diydotnet
+Cartridge-Short-Name: DIYDOTNET
 Cartridge-Version: '0.0.1'
 Compatible-Versions: ['0.0.1']
 Cartridge-Vendor: rgen
-Display-Name: DivDotNet
+Display-Name: DiyDotNet
 Source-Url: https://github.com/vivektempe/DIYDOTNET.git
-Description: "DIV DotNet Cartrige."
+Description: "DIY DotNet Cartridge."
 Version: '4.5'
 Versions: ['4.5']
 License: "??"
@@ -51,7 +51,7 @@ Cart-Data:
     Type: environment
     Description: "Unique ID which identified the gear. This value changes between gears."
 Provides:
-  - divdotnet
+  - diydotnet
 Publishes: {}
 Subscribes:
   set-env:
