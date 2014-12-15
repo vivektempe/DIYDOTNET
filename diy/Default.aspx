@@ -1,22 +1,30 @@
+﻿<%@ Page Language="C#" %>  
+  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+  
+<script runat="server">
+</script>  
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Welcome to OpenShift</title>
-  <style>
+
+<style>
 
 /*!
- * Bootstrap v3.0.0
- *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
+* Bootstrap v3.0.0
+*
+* Copyright 2013 Twitter, Inc
+* Licensed under the Apache License v2.0
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Designed and built with all the love in the world @twitter by @mdo and @fat.
+*/
 
-.logo {
+  .logo {
     background-size: cover;
     height: 58px;
     width: 180px;
@@ -140,7 +148,6 @@ hgroup {
 }
 footer {
     margin: 50px 0 25px;
-    font-size: 11px
 }
 h1, h2, h3 {
   color: #000;
@@ -190,7 +197,7 @@ pre {
   padding: 13.333px 20px;
   margin: 0 0 20px;
   font-size: 13px;
-  line-height: 1.4;
+line-height: 1.4;
   background-color: #fff;
   border-left: 2px solid rgba(120,120,120,0.35);
   white-space: pre;
@@ -201,79 +208,32 @@ pre {
   font-family: Menlo,Monaco,"Liberation Mono",Consolas,monospace !important;
 }
 
-    </style>
+</style>
+
 </head>
 <body>
-
+<form id="form1" runat="server">
 <section class='container'>
-  <hgroup>
-    <h1>Welcome to your Do-It-Yourself application on OpenShift</h1>
-  </hgroup>
-  <p>
-      Do-It-Yourself is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on OpenShift.
-      To get started, add your framework of choice and modify .openshift/action_hooks/{start, stop}
-      to start and stop your application.
-      The only restriction is that your application should bind to <code>$OPENSHIFT_DIY_IP:8080</code>
-      Don't forget to stop the existing server that is running before you push your stop file.
-  </p>
-
-  <div class="row">
-  <section class='col-xs-12 col-sm-6 col-md-6'>
-    <section>
-      <h2>Deploying code changes</h2>
-        <p>OpenShift uses the <a href="http://git-scm.com/">Git version control system</a> for your source code, and grants you access to it via the Secure Shell (SSH) protocol. In order to upload and download code to your application you need to give us your <a href="https://www.openshift.com/developers/remote-access">public SSH key</a>. You can upload it within the web console or install the <a href="https://www.openshift.com/developers/rhc-client-tools-install">RHC command line tool</a> and run <code>rhc setup</code> to generate and upload your key automatically.</p>
-
-                <h3>Working in your local Git repository</h3>
-                <p>If you created your application from the command line and uploaded your SSH key, rhc will automatically download a copy of that source code repository (Git calls this 'cloning') to your local system.</p>
-
-                <p>If you created the application from the web console, you'll need to manually clone the repository to your local system. Copy the application's source code Git URL and then run:</p>
-
-<pre>$ git clone &lt;git_url&gt; &lt;directory_to_create&gt;
-
-# Within your project directory
-# Commit your changes and push to OpenShift
-
-$ git commit -a -m 'Some commit message'
-$ git push</pre>
-
-          <ul>
-            <li><a href="https://www.openshift.com/developers/deploying-and-building-applications">Learn more about deploying and building your application</a></li>
-            <li>See the README file in your local application Git repository for more information on the options for deploying applications.</li>
-          </ul>
-
-    </section>
-
-  </section>
-  <section class="col-xs-12 col-sm-6 col-md-6">
-
-        <h2>Managing your application</h2>
-
-        <h3>Web Console</h3>
-        <p>You can use the OpenShift web console to enable additional capabilities via cartridges, add collaborator access authorizations, designate custom domain aliases, and manage domain memberships.</p>
-
-        <h3>Command Line Tools</h3>
-        <p>Installing the <a href="https://www.openshift.com/developers/rhc-client-tools-install">OpenShift RHC client tools</a> allows you complete control of your cloud environment. Read more on how to manage your application from the command line in our <a href="https://www.openshift.com/user-guide">User Guide</a>.
-        </p>
-
-        <h2>Development Resources</h2>
-          <ul>
-                    <li><a href="https://www.openshift.com/developers">Developer Center</a></li>
-                    <li><a href="https://www.openshift.com/user-guide">User Guide</a></li>
-                    <li><a href="https://www.openshift.com/support">OpenShift Support</a></li>
-                    <li><a href="http://stackoverflow.com/questions/tagged/openshift">Stack Overflow questions for OpenShift</a></li>
-                    <li><a href="http://webchat.freenode.net/?randomnick=1&channels=openshift&uio=d4">IRC channel at #openshift on freenode.net</a></li>
-                    <li><a href="http://git-scm.com/documentation">Git documentation</a></li>
-                  </ul>
+          <hgroup>
+            <h1>Welcome to your DIY .NET application on RGen OpenShift</h1>
+          </hgroup>
 
 
-  </section>
-  </div>
+        <div class="row">
+          <section class='col-xs-12 col-sm-6 col-md-6'>
 
+              <section>
+                  <br />
+        <br />
+        
+        <asp:Label ID="Label1" runat="server" Font-Size="Smaller" ForeColor="Crimson"></asp:Label> 
+              </section>
 
-  <footer>
-  <div class="logo"><a href="https://www.openshift.com/"></a></div>
-  </footer>
-  </section>
-
+            
+          </section>
+         
+        </div>
+</section>
+    </form>
 </body>
 </html>
