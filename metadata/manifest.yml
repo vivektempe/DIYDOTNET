@@ -4,6 +4,7 @@ Cartridge-Version: '0.0.1'
 Compatible-Versions: ['0.0.1']
 Cartridge-Vendor: rgen
 Display-Name: DivDotNet
+Source-Url: https://github.com/vivektempe/DIYDOTNET
 Description: "DIV DotNet Cartrige."
 Version: '4.5'
 Versions: ['4.5']
